@@ -13,17 +13,36 @@ public abstract class Persoana
         this.prenume = prenume;
     }
 
-    public String getId() { return id; }
-    public void setId(String id) { this.id = id; }
+    public String getId()
+    {
+        return id;
+    }
+    public void setId(String id)
+    {
+        this.id = id;
+    }
 
-    public String getNume() { return nume; }
-    public void setNume(String nume) { this.nume = nume; }
+    public String getNume()
+    {
+        return nume;
+    }
+    public void setNume(String nume)
+    {
+        this.nume = nume;
+    }
 
-    public String getPrenume() { return prenume; }
-    public void setPrenume(String prenume) { this.prenume = prenume; }
+    public String getPrenume()
+    {
+        return prenume;
+    }
+    public void setPrenume(String prenume)
+    {
+        this.prenume = prenume;
+    }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return nume + " " + prenume;
     }
 }

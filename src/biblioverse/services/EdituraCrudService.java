@@ -3,22 +3,27 @@ package biblioverse.services;
 import biblioverse.models.Editura;
 import java.util.List;
 
-public class EdituraCrudService {
+public class EdituraCrudService
+{
     private static EdituraCrudService instance;
     private GenericDbService dbService = GenericDbService.getInstance();
 
-    private EdituraCrudService() {
+    private EdituraCrudService()
+    {
         createTableIfNotExists();
     }
 
-    public static EdituraCrudService getInstance() {
-        if (instance == null) {
+    public static EdituraCrudService getInstance()
+    {
+        if (instance == null)
+        {
             instance = new EdituraCrudService();
         }
         return instance;
     }
 
-    private void createTableIfNotExists() {
+    private void createTableIfNotExists()
+    {
         String sql = "CREATE TABLE IF NOT EXISTS edituri (" +
                 "cod VARCHAR(50) PRIMARY KEY, " +
                 "nume VARCHAR(100), " +
@@ -26,12 +31,14 @@ public class EdituraCrudService {
         dbService.executeUpdate(sql);
     }
 
-    public void create(Editura editura) {
+    public void create(Editura editura)
+    {
         String sql = "INSERT INTO edituri (cod, nume, tara) VALUES (?, ?, ?)";
         dbService.executeUpdate(sql, editura.getCod(), editura.getNume(), editura.getTara());
     }
 
-    public List<Editura> readAll() {
+    public List<Editura> readAll()
+    {
         String sql = "SELECT * FROM edituri";
         return dbService.executeSelect(sql, rs -> new Editura(
                 rs.getString("cod"),
@@ -40,12 +47,14 @@ public class EdituraCrudService {
         ));
     }
 
-    public void update(Editura editura) {
+    public void update(Editura editura)
+    {
         String sql = "UPDATE edituri SET nume = ?, tara = ? WHERE cod = ?";
         dbService.executeUpdate(sql, editura.getNume(), editura.getTara(), editura.getCod());
     }
 
-    public void delete(String cod) {
+    public void delete(String cod)
+    {
         String sql = "DELETE FROM edituri WHERE cod = ?";
         dbService.executeUpdate(sql, cod);
     }

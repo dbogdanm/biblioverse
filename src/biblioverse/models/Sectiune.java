@@ -11,14 +11,27 @@ public class Sectiune
         this.denumire = denumire;
     }
 
-    public String getIdSectiune() { return idSectiune; }
-    public void setIdSectiune(String idSectiune) { this.idSectiune = idSectiune; }
+    public String getIdSectiune()
+    {
+        return idSectiune;
+    }
+    public void setIdSectiune(String idSectiune)
+    {
+        this.idSectiune = idSectiune;
+    }
 
-    public String getDenumire() { return denumire; }
-    public void setDenumire(String denumire) { this.denumire = denumire; }
+    public String getDenumire()
+    {
+        return denumire;
+    }
+    public void setDenumire(String denumire)
+    {
+        this.denumire = denumire;
+    }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return denumire;
     }
 }

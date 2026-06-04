@@ -19,22 +19,39 @@ public class Imprumut
         this.dataReturnare = null;
     }
 
-    public String getIdImprumut() { return idImprumut; }
+    public String getIdImprumut()
+    {
+        return idImprumut;
+    }
     
-    public Cititor getCititor() { return cititor; }
+    public Cititor getCititor()
+    {
+        return cititor;
+    }
     
-    public Carte getCarte() { return carte; }
+    public Carte getCarte()
+    {
+        return carte;
+    }
     
-    public LocalDate getDataImprumut() { return dataImprumut; }
+    public LocalDate getDataImprumut()
+    {
+        return dataImprumut;
+    }
 
-    public LocalDate getDataReturnare() { return dataReturnare; }
+    public LocalDate getDataReturnare()
+    {
+        return dataReturnare;
+    }
 
 
-    public void returneaza(LocalDate data) {
+    public void returneaza(LocalDate data)
+    {
         this.dataReturnare = data;
     }
 
-    public boolean isActiv() {
+    public boolean isActiv()
+    {
         return dataReturnare == null;
     }
 

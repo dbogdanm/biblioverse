@@ -3,8 +3,10 @@ package biblioverse.main;
 import biblioverse.models.*;
 import biblioverse.services.*;
 
-public class Main {
-    public static void main(String[] args) {
+public class Main
+{
+    public static void main(String[] args)
+    {
         BibliotecaService service = new BibliotecaService();
 
         Autor autor1 = new Autor("A01", "Eminescu", "Mihai", "Romania");
@@ -56,7 +58,8 @@ public class Main {
         service.cautaCarteDupaTitlu("Luceafarul");
 
         System.out.println("\n=== TESTARE PERSISTENTA BAZA DE DATE (JDBC) ===");
-        try {
+        try
+        {
             AutorCrudService autorService = AutorCrudService.getInstance();
             CititorCrudService cititorService = CititorCrudService.getInstance();
             EdituraCrudService edituraService = EdituraCrudService.getInstance();
@@ -85,7 +88,9 @@ public class Main {
 
             System.out.println("Datele au fost salvate cu succes in tabelele: autori, cititori, edituri, sectiuni!");
             
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             System.err.println("Eroare la testarea bazei de date. Verificati conexiunea! Detalii: " + e.getMessage());
         }
     }
