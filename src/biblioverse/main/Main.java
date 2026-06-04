@@ -2,7 +2,6 @@ package biblioverse.main;
 
 import biblioverse.models.*;
 import biblioverse.services.*;
-import ro.unibuc.biblioteca.models.*;
 
 public class Main {
     public static void main(String[] args) {

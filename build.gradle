@@ -1,0 +1,30 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.mariadb.jdbc:mariadb-java-client:3.4.1'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+
+application {
+    mainClass = 'biblioverse.main.Main'
+}
+
+run {
+    standardInput = System.in
+    systemProperty 'db.url',      project.findProperty('db.url')      ?: ''
+    systemProperty 'db.user',     project.findProperty('db.user')     ?: ''
+    systemProperty 'db.password', project.findProperty('db.password') ?: ''
+}

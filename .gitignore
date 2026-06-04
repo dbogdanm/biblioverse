@@ -1,3 +1,36 @@
+# Build / IDE
+.gradle
+build
+.kotlin
 .idea
 out
 *.iml
+*.ipr
+*.iws
+
+# Logs / audit
+audit.csv
+*.log
+jar
+.jar
+.claude
+
+# Secrets & local config
+gradle.properties
+local.properties
+secrets.properties
+*.env
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.crt
+credentials.json
+
+# OS
+Thumbs.db
+.DS_Store
