@@ -1,4 +1,4 @@
-package ro.unibuc.biblioteca.models;
+package biblioverse.models;
 
 import java.time.LocalDate;
 

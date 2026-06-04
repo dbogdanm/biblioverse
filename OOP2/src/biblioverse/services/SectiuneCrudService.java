@@ -1,6 +1,6 @@
-package ro.unibuc.biblioteca.services;
+package biblioverse.services;
 
-import ro.unibuc.biblioteca.models.Sectiune;
+import biblioverse.models.Sectiune;
 import java.util.List;
 
 public class SectiuneCrudService {

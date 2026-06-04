@@ -1,7 +1,8 @@
-package ro.unibuc.biblioteca.main;
+package biblioverse.main;
 
+import biblioverse.models.*;
+import biblioverse.services.*;
 import ro.unibuc.biblioteca.models.*;
-import ro.unibuc.biblioteca.services.BibliotecaService;
 
 public class Main {
     public static void main(String[] args) {
@@ -57,10 +58,10 @@ public class Main {
 
         System.out.println("\n=== TESTARE PERSISTENTA BAZA DE DATE (JDBC) ===");
         try {
-            ro.unibuc.biblioteca.services.AutorCrudService autorService = ro.unibuc.biblioteca.services.AutorCrudService.getInstance();
-            ro.unibuc.biblioteca.services.CititorCrudService cititorService = ro.unibuc.biblioteca.services.CititorCrudService.getInstance();
-            ro.unibuc.biblioteca.services.EdituraCrudService edituraService = ro.unibuc.biblioteca.services.EdituraCrudService.getInstance();
-            ro.unibuc.biblioteca.services.SectiuneCrudService sectiuneService = ro.unibuc.biblioteca.services.SectiuneCrudService.getInstance();
+            AutorCrudService autorService = AutorCrudService.getInstance();
+            CititorCrudService cititorService = CititorCrudService.getInstance();
+            EdituraCrudService edituraService = EdituraCrudService.getInstance();
+            SectiuneCrudService sectiuneService = SectiuneCrudService.getInstance();
             
             System.out.println("Se populeaza baza de date cu datele din Etapa 1...");
 

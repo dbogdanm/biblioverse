@@ -1,6 +1,6 @@
-package ro.unibuc.biblioteca.services;
+package biblioverse.services;
 
-import ro.unibuc.biblioteca.models.Cititor;
+import biblioverse.models.Cititor;
 import java.util.List;
 
 public class CititorCrudService {

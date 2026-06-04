@@ -1,4 +1,4 @@
-package ro.unibuc.biblioteca.models;
+package biblioverse.models;
 
 public class Autor extends Persoana {
     private String nationalitate;

@@ -1,4 +1,4 @@
-package ro.unibuc.biblioteca.models;
+package biblioverse.models;
 
 public class Bibliotecar extends Persoana {
     private double salariu;

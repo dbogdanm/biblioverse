@@ -1,6 +1,6 @@
-package ro.unibuc.biblioteca.services;
+package biblioverse.services;
 
-import ro.unibuc.biblioteca.models.Editura;
+import biblioverse.models.Editura;
 import java.util.List;
 
 public class EdituraCrudService {

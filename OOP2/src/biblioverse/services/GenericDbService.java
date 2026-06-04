@@ -1,4 +1,4 @@
-package ro.unibuc.biblioteca.services;
+package biblioverse.services;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

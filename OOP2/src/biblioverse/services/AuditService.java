@@ -1,4 +1,4 @@
-package ro.unibuc.biblioteca.services;
+package biblioverse.services;
 
 import java.io.FileWriter;
 import java.io.IOException;

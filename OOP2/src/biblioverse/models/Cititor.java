@@ -1,4 +1,4 @@
-package ro.unibuc.biblioteca.models;
+package biblioverse.models;
 
 public class Cititor extends Persoana {
     private String email;

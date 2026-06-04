@@ -1,6 +1,6 @@
-package ro.unibuc.biblioteca.services;
+package biblioverse.services;
 
-import ro.unibuc.biblioteca.models.Autor;
+import biblioverse.models.Autor;
 import java.util.List;
 
 public class AutorCrudService {
